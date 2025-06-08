@@ -13,14 +13,11 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-steps:
 - script: mvn compile package
   displayName: 'Build'
 
-steps:
 - script: mvn test
   displayName: 'Test'
 
-steps:
 - script: java -jar target/MAzureRevision-1.0-SNAPSHOT.jar
   displayName: 'Run'
